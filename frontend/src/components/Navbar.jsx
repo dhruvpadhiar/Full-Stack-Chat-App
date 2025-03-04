@@ -22,16 +22,16 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <Link
+            {/* <Link
               to={"/settings"}
               className={`
               btn btn-sm gap-2 transition-colors
-              rounded-xl p-4
+              rounded-xl 
               `}
             >
               <Settings className="w-4 h-4" />
               <span className="hidden sm:inline">Settings</span>
-            </Link>
+            </Link> */}
 
             {authUser && (
               <>
@@ -40,7 +40,7 @@ const Navbar = () => {
                   <span className="hidden sm:inline">Profile</span>
                 </Link>
 
-                <button className="border-1 rounded-xl p-2 flex gap-2 items-center cursor-pointer" onClick={logout}>
+                <button className="btn bg-gray-200 text-black hover:bg-gray-500 border-1 rounded-xl p-2 flex gap-2 items-center cursor-pointer" onClick={logout}>
                   <LogOut className="size-5" />
                   <span className="hidden sm:inline">Logout</span>
                 </button>
